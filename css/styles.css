@@ -124,10 +124,29 @@ p {
   border: 2px solid black;
   display: grid;
   grid-template-rows: 1fr 1fr;
-}
+  padding: 1.5rem;
 
-.nav-bar div {
-  display: flex;
+  & .search-bar,
+  .current-user {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .current-user {
+    align-items: center;
+
+    & img {
+      border-radius: 50%;
+    }
+  }
+
+  & input[type='search'] {
+    max-width: 50%;
+    width: 100%;
+    border-radius: 1rem;
+    border: none;
+    background-color: rgb(219, 219, 219);
+  }
 }
 
 .main-content {
