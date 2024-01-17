@@ -92,21 +92,17 @@ p {
   color: white;
   background-color: rgb(36, 150, 226);
   padding-left: 1rem;
-
-  & article {
-    display: grid;
-    gap: 2.5rem;
-  }
-
-  & header {
-    margin-top: 1rem;
-  }
+  padding-top: 1rem;
 
   & :is(li, header) {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     font-weight: bold;
+  }
+
+  & header {
+    gap: 0.5rem;
   }
 
   & :is(li):not(:last-child) {
@@ -120,8 +116,18 @@ p {
   color: white;
 }
 
+.sidebar-info > *:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
 .nav-bar {
   border: 2px solid black;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.nav-bar div {
+  display: flex;
 }
 
 .main-content {
