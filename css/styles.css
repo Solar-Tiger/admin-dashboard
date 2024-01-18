@@ -177,7 +177,7 @@ input[type='search'] {
   border-radius: 1rem;
   border: none;
   background-color: rgb(219, 219, 219);
-  padding: 0.3rem;
+  padding: 0.3rem 0.6rem;
 }
 
 .main-content {
