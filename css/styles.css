@@ -184,6 +184,20 @@ input[type='search'] {
   grid-column: 2;
   grid-row: 2/5;
   border: 2px solid black;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.user-projects {
+  padding: 2rem 1rem;
+
+  & .projects {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
 }
 
 #material-icons span {
