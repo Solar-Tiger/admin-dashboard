@@ -166,29 +166,35 @@ input[type='search'] {
 
 .main-content {
   grid-column: 2;
-  grid-row: 2/3;
   border: 2px solid black;
 
   display: grid;
   grid-template-columns: 70% 30%;
-  grid-template-rows: 4% repeat(2, 1fr);
 }
 
-.main-content > h2 {
-  padding: 0 2rem;
+.main-content h2 {
+  padding: 1rem 0;
+}
+
+.your-projects {
+  display: grid;
+  grid-template-rows: 0fr 1fr;
 }
 
 .user-current-projects {
-  grid-row: 2/4;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
+  height: 100%;
   gap: 2rem;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .user-current-projects > div {
   border: 2px solid black;
+}
+
+.main-content-sidebar {
+  display: grid;
 }
 
 /* .wrapper {
